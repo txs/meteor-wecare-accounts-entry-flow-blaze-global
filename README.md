@@ -1,5 +1,6 @@
 This is a account Entry that works with FlowRouter 2.0 and Blaze layout.
 A fix to use Blaze layout instead of flow layout.
+Do the Blaze layout in a global way.
 .
 
 ## Getting started
