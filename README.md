@@ -1,4 +1,6 @@
-This is a fork of joshowens:accounts-entry which uses Flow Router instead of Iron Router.
+This is a account Entry that works with FlowRouter 2.0 and Blaze layout.
+A fix to use Blaze layout instead of flow layout.
+.
 
 ## Getting started
 
@@ -32,4 +34,9 @@ FlowRouter.route('/dashboard', {
 You can also apply this to every route at once (making sure to exclude the logged out route):
 ````js
 FlowRouter.triggers.enter([AccountsEntrySignInRequired], {except: ['loggedOut']});
+````
+
+If you want to change the render you can always use the triggers in FlowRouter:
+````js
+FlowRouter.triggers.enter([trackRouteEntry], {only: ["entrySignIn"]});
 ````
