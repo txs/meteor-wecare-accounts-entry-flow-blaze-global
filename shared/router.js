@@ -27,7 +27,13 @@ FlowRouter.route('/sign-in', {
          Template[this.template].events(AccountsEntry.entrySignInEvents);
          Template[this.template].helpers(AccountsEntry.entrySignInHelpers);
       }
-      BlazeLayout.render('entrySignIn');
+      // BlazeLayout.render('entrySignIn');
+      BlazeLayout.render('globalLayout', { 
+          main: "entrySignIn",
+          headerTitle: "headerTitleIndex",
+          headerButtonLeft: "",
+          headerButtonRight: "",  
+      });
    }
 });
 
@@ -63,7 +69,13 @@ FlowRouter.route('/sign-up', {
          Template[this.template].events(AccountsEntry.entrySignUpEvents);
          Template[this.template].helpers(AccountsEntry.entrySignUpHelpers);
       }
-      BlazeLayout.render('entrySignUp');
+      BlazeLayout.render('globalLayout', { 
+          main: "entrySignUp",
+          headerTitle: "headerTitleIndex",
+          headerButtonLeft: "",
+          headerButtonRight: "",  
+      });
+      // BlazeLayout.render('entrySignUp');
    }
 });
 
@@ -75,7 +87,13 @@ FlowRouter.route('/forgot-password', {
    name: 'entryForgotPassword',
    triggersEnter: [clearEntryError],
    action: function() {
-      BlazeLayout.render('entryForgotPassword');
+      // BlazeLayout.render('entryForgotPassword');
+      BlazeLayout.render('globalLayout', { 
+          main: "entryForgotPassword",
+          headerTitle: "headerTitleIndex",
+          headerButtonLeft: "",
+          headerButtonRight: "",  
+      });
    }
 });
 
@@ -92,7 +110,13 @@ FlowRouter.route('/sign-out', {
       }
    ],
    action: function() {
-      BlazeLayout.render('entrySignOut');
+      // BlazeLayout.render('entrySignOut');
+      BlazeLayout.render('globalLayout', { 
+          main: "entrySignOut",
+          headerTitle: "headerTitleIndex",
+          headerButtonLeft: "",
+          headerButtonRight: "",  
+      });
    }
 });
 
@@ -100,7 +124,13 @@ FlowRouter.route('/verification-pending', {
    name: 'entryVerificationPending',
    triggersEnter: [clearEntryError],
    action: function() {
-      BlazeLayout.render('entryVerificationPending');
+      // BlazeLayout.render('entryVerificationPending');
+      BlazeLayout.render('globalLayout', { 
+          main: "entryVerificationPending",
+          headerTitle: "headerTitleIndex",
+          headerButtonLeft: "",
+          headerButtonRight: "",  
+      });
    }
 });
 
@@ -113,7 +143,13 @@ FlowRouter.route('/reset-password/:resetToken', {
       }
   ],
    action: function() {
-      BlazeLayout.render('entryResetPassword');
+      // BlazeLayout.render('entryResetPassword');
+      BlazeLayout.render('globalLayout', { 
+          main: "entryResetPassword",
+          headerTitle: "headerTitleIndex",
+          headerButtonLeft: "",
+          headerButtonRight: "",  
+      });
    }
 });
 
@@ -126,7 +162,13 @@ FlowRouter.route('/enroll-account/:resetToken', {
       }
   ],
    action: function() {
-      BlazeLayout.render('entryEnrollAccount');
+      // BlazeLayout.render('entryEnrollAccount');
+      BlazeLayout.render('globalLayout', { 
+          main: "entryEnrollAccount",
+          headerTitle: "headerTitleIndex",
+          headerButtonLeft: "",
+          headerButtonRight: "",  
+      });
    }
 });
 

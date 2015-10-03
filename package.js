@@ -1,8 +1,8 @@
 Package.describe({
-   name: "wecare:accounts-entry-flow-blaze",
+   name: "wecare:accounts-entry-flow-blaze-global",
    version: '1.0.0',
    summary: "Make signin and signout their own pages with routes.",
-   git: 'https://github.com/txs/meteor-wecare-accounts-entry-flow-blaze',
+   git: 'https://github.com/txs/meteor-wecare-accounts-entry-flow-blaze-global',
    documentation: 'README.md'
 });
 

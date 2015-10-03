@@ -8,7 +8,7 @@ Do the Blaze layout in a global way.
 Install:
 
 ```
-meteor add dovrosenberg:accounts-entry-flow
+meteor add wecare:accounts-entry-flow-blaze-global
 ```
 
 See the [original](https://github.com/Differential/accounts-entry) package for more details on usage and examples.  The differences are described here:
