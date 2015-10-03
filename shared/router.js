@@ -27,7 +27,7 @@ FlowRouter.route('/sign-in', {
          Template[this.template].events(AccountsEntry.entrySignInEvents);
          Template[this.template].helpers(AccountsEntry.entrySignInHelpers);
       }
-      FlowLayout.render('entrySignIn');
+      BlazeLayout.render('entrySignIn');
    }
 });
 
@@ -63,7 +63,7 @@ FlowRouter.route('/sign-up', {
          Template[this.template].events(AccountsEntry.entrySignUpEvents);
          Template[this.template].helpers(AccountsEntry.entrySignUpHelpers);
       }
-      FlowLayout.render('entrySignUp');
+      BlazeLayout.render('entrySignUp');
    }
 });
 
@@ -75,7 +75,7 @@ FlowRouter.route('/forgot-password', {
    name: 'entryForgotPassword',
    triggersEnter: [clearEntryError],
    action: function() {
-      FlowLayout.render('entryForgotPassword');
+      BlazeLayout.render('entryForgotPassword');
    }
 });
 
@@ -92,7 +92,7 @@ FlowRouter.route('/sign-out', {
       }
    ],
    action: function() {
-      FlowLayout.render('entrySignOut');
+      BlazeLayout.render('entrySignOut');
    }
 });
 
@@ -100,7 +100,7 @@ FlowRouter.route('/verification-pending', {
    name: 'entryVerificationPending',
    triggersEnter: [clearEntryError],
    action: function() {
-      FlowLayout.render('entryVerificationPending');
+      BlazeLayout.render('entryVerificationPending');
    }
 });
 
@@ -113,7 +113,7 @@ FlowRouter.route('/reset-password/:resetToken', {
       }
   ],
    action: function() {
-      FlowLayout.render('entryResetPassword');
+      BlazeLayout.render('entryResetPassword');
    }
 });
 
@@ -126,7 +126,7 @@ FlowRouter.route('/enroll-account/:resetToken', {
       }
   ],
    action: function() {
-      FlowLayout.render('entryEnrollAccount');
+      BlazeLayout.render('entryEnrollAccount');
    }
 });
 

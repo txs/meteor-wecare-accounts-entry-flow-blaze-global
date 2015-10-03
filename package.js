@@ -1,8 +1,8 @@
 Package.describe({
-   name: "dovrosenberg:accounts-entry-flow",
-   version: '0.9.5',
+   name: "wecare:accounts-entry-flow-blaze",
+   version: '1.0.0',
    summary: "Make signin and signout their own pages with routes.",
-   git: 'https://github.com/dovrosenberg/accounts-entry',
+   git: 'https://github.com/txs/meteor-wecare-accounts-entry-flow-blaze',
    documentation: 'README.md'
 });
 
