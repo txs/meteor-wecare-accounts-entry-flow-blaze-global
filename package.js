@@ -1,15 +1,15 @@
 Package.describe({
    name: "wecare:accounts-entry-flow-blaze-global",
-   version: '1.0.0',
+   version: '1.0.4',
    summary: "Make signin and signout their own pages with routes.",
    git: 'https://github.com/txs/meteor-wecare-accounts-entry-flow-blaze-global',
    documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom("METEOR@1.1.0.2");
+  api.versionsFrom("METEOR@1.2.1");
 
-  api.use(['kadira:flow-router@2.0.0', 'softwarerero:accounts-t9n@1.0.3', 'joshowens:simple-form@0.2.2', 'sacha:spin@2.0.4'], ['client', 'server']);
+  api.use(['kadira:flow-router@2.0.0', 'softwarerero:accounts-t9n@1.0.3', 'wecare:simple-form@0.2.4', 'sacha:spin@2.0.4'], ['client', 'server']);
   // CLIENT
   api.use([
       'deps',
